@@ -7,10 +7,7 @@ const app=express();
 const PORT= process.env.PORT | 3000;
 
 Queue.InitQueue((some)=>{
-if(some.success)
-        console.log("Queue Connected")
-    else
-        console.log("Error Connection to QUEUE")
+console.log(some)
 })
 //Current Version of the API
 const version='v1'
